@@ -5,13 +5,12 @@ A full-stack Pharmacy Management System with a Dashboard and Inventory module, b
 ---
 
 ## Live Demo
-
 - **Frontend:** https://pharmacy-module-xi.vercel.app
-- **Health Check:** https://pharmacy-module.onrender.com/api/health
 - **Backend API:** https://pharmacy-module.onrender.com
-- **Note:** Backend is hosted on Render free tier and sleeps after inactivity.Before opening the app, please visit this URL first to wake up the backend:
-https://pharmacy-module.onrender.com/api/health
-Wait for it to show {"status":"ok"}, then open the frontend link.
+
+> **Note:** Backend is hosted on Render free tier and sleeps after inactivity.
+> Please open the backend health check first: https://pharmacy-module.onrender.com/api/health
+> Wait for `{"status":"ok"}` response, then open the frontend link.
 ---
 
 ## Project Structure
