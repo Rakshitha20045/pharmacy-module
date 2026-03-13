@@ -17,9 +17,10 @@ A full-stack Pharmacy Management System with a Dashboard and Inventory module, b
 ```
 pharmacy-module/
 ├── backend/
-│   ├── main.py           # FastAPI application, all routes and models
-│   ├── requirements.txt  # Python dependencies
-│   └── pharmacy.db       # SQLite database (auto-created with seed data)
+│   ├── main.py
+│   ├── requirements.txt
+│   ├── .python-version
+│   └── pharmacy.db
 └── frontend/
     ├── src/
     │   ├── api/
@@ -39,7 +40,8 @@ pharmacy-module/
     ├── package-lock.json
     ├── postcss.config.js
     ├── tailwind.config.js
-    └── vite.config.js
+    ├── vite.config.js
+    └── vercel.json
 ```
 
 ---
