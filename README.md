@@ -7,6 +7,7 @@ A full-stack Pharmacy Management System with a Dashboard and Inventory module, b
 ## Live Demo
 
 - **Frontend:** https://pharmacy-module-xi.vercel.app
+- **Health Check:** https://pharmacy-module.onrender.com/api/health
 - **Backend API:** https://pharmacy-module.onrender.com
 
 ---
