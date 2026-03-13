@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #f5f6fa;
+  --sidebar: #ffffff;
+  --card: #ffffff;
+  --border: #e8eaed;
+  --text-primary: #1a1d23;
+  --text-secondary: #6b7280;
+  --text-muted: #9ca3af;
+  --accent-green: #10b981;
+  --accent-blue: #3b82f6;
+  --accent-orange: #f59e0b;
+  --accent-purple: #8b5cf6;
+  --accent-red: #ef4444;
+  --green-light: #d1fae5;
+  --blue-light: #dbeafe;
+  --orange-light: #fef3c7;
+  --purple-light: #ede9fe;
+  --red-light: #fee2e2;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 2px; }
+
+.mono { font-family: 'JetBrains Mono', monospace; }
+
+/* Status badges */
+.badge-active    { background: #d1fae5; color: #059669; }
+.badge-lowstock  { background: #fef3c7; color: #d97706; }
+.badge-expired   { background: #fee2e2; color: #dc2626; }
+.badge-outofstock{ background: #f3f4f6; color: #6b7280; }
+
+/* Smooth transitions */
+.btn-primary {
+  background: #1a1d23;
+  color: white;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.btn-primary:hover { background: #2d3340; transform: translateY(-1px); }
+
+.btn-outline {
+  background: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.btn-outline:hover { background: var(--bg); }
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.input-field {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 9px 12px;
+  font-size: 13px;
+  font-family: 'DM Sans', sans-serif;
+  color: var(--text-primary);
+  width: 100%;
+  transition: border 0.15s;
+  outline: none;
+}
+.input-field:focus { border-color: #1a1d23; background: white; }
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+.fade-in { animation: fadeIn 0.25s ease; }
+
+@keyframes pulse-dot { 0%,100%{opacity:1;} 50%{opacity:0.4;} }
