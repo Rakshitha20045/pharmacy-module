@@ -22,18 +22,22 @@ pharmacy-module/
 └── frontend/
     ├── src/
     │   ├── api/
-    │   │   └── index.js          # All API calls (axios)
+    │   │   └── index.js
     │   ├── components/
-    │   │   ├── MedicineModal.jsx  # Add/Edit medicine form
-    │   │   ├── Sidebar.jsx        # Navigation sidebar
-    │   │   └── StatusBadge.jsx    # Status indicator component
+    │   │   ├── MedicineModal.jsx
+    │   │   ├── Sidebar.jsx
+    │   │   └── StatusBadge.jsx
     │   ├── pages/
-    │   │   ├── Dashboard.jsx      # Sales overview page
-    │   │   └── Inventory.jsx      # Inventory management page
+    │   │   ├── Dashboard.jsx
+    │   │   └── Inventory.jsx
     │   ├── App.jsx
-    │   └── main.jsx
+    │   ├── main.jsx
+    │   └── index.css
     ├── index.html
     ├── package.json
+    ├── package-lock.json
+    ├── postcss.config.js
+    ├── tailwind.config.js
     └── vite.config.js
 ```
 
