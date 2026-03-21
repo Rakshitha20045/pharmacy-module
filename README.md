@@ -1,4 +1,4 @@
-# Pharmacy CRM — SwasthiQ Intern Assignment
+# Pharmacy CRM 
 
 A full-stack Pharmacy Management System with a Dashboard and Inventory module, built with FastAPI (Python) and React.
 
